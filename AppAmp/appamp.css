@@ -1,0 +1,342 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+.center-area{
+    width: 85%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.center{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* ============> header-area ================> */
+/* ============> header-area ================> */
+.header-area{
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 12;
+    background-color: #fff;
+}
+.top-bar{
+    padding: 10px 0;
+}
+.menu{
+    width: 60%;
+}
+.logo{
+    width: 30%;
+}
+.button{
+    width: 10%;
+}
+.button{
+    float: right;
+}
+.logo img{
+    width: 50px;
+    float: left
+}
+.logo span{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    display: inline-block;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+
+}
+.menu ul li a{
+    margin: 17px 20px;
+    display: inline-block;
+    color: #010101;
+    font-weight: 400;
+}
+.menu ul li i{
+    font-size: 20px;
+}
+.button button{
+    margin-top: 8px;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 5px;
+    border-color: #6278df;
+    color: #6278df;
+    font-weight: 700;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: #6278df;
+    color: #fff;
+    border: transparent;
+    box-shadow: 1px 1px 20px #6278df;
+}
+.menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    width: 200px;
+    transform-origin: top bottom;
+    transform: scaley(0);
+    transition: .5s;
+}
+.menu ul li ul li{
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+/* ==============> banner-section ===========> */
+/* ==============> banner-section ===========> */
+.banner-section{
+    background-image: url(./banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 200px 0;
+    color: #fff;
+    position: relative;
+    z-index: 9;
+}
+.banner-section::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+.content h2{
+    font-weight: 500;
+}
+.content h1{
+    margin: 25px 0;
+    font-size: 50px;
+}
+.btn button{
+    padding: 15px 30px;
+    font-size: 20px;
+    color:  #7d7d7d;
+    border: transparent;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    transition-duration: .5s;
+}
+.btn button:hover{
+    background-color: #6278df;
+    color: #fff;
+}
+/* ==============> video-section ============> */
+/* ==============> video-section ============> */
+.video-section{
+    padding: 100px 0;
+    background-color: rgb(244, 244, 244);
+}
+.video-content{
+    padding-left: 50px;
+}
+.video-content h2{
+    font-size: 45px;
+    font-weight: 400;
+}
+.video-content p{
+    color: #767676;
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 30px;
+}
+/* ==================> content-area ===========> */
+/* ==================> content-area ===========> */
+.content-area{
+    background-color: rgb(244, 244, 244);
+}
+.titel{
+    padding-top: 150px;
+    margin-bottom: 100px;
+}
+.titel h1{
+    font-size: 60px;
+}
+.titel p{
+    color: #767676;
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: 300;
+}
+.card{
+    flex-wrap: wrap;
+}
+.card1{
+    width: 28%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    transition-duration: .5s;
+    height: 200px;
+}
+.card1:hover{
+    box-shadow: 0 0 20px 0 #ccc;
+}
+.card1 .icon{
+    margin-right:20px;
+    font-size: 40px;
+    color: #6278df;
+}
+.card-content h2{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 25px;
+}
+.card-content p{
+    color: #767676;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+/* =============> doller-card ============> */
+/* =============> doller-card ============> */
+.titel2{
+    margin: 90px 0;
+} 
+.titel2 h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+.titel2 p{
+    color: #767676;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.doller1{
+    width: 33%;
+    background-color: #fff;
+    margin: 0 20px;
+    transition-duration: .5s;
+}
+.top,.list{
+    padding: 20px;
+}
+.doller1:hover .top{
+    background-color: #6278df;
+}
+.doller1:hover .rr{
+    background-color: #6278df;
+    color: #fff;
+}
+.top h3{
+    font-size: 23px;
+    margin-top: 10px;
+    font-weight: 500;
+    
+}
+.top h2{
+    margin: 35px 0;
+
+}
+.top p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 15px 0;
+
+}
+.top span{
+    font-size: 50px;
+}
+.top{
+    border-bottom: 2px solid #ddd;
+}
+.list{
+    margin-top: 30px;
+}
+.list ul li {
+    line-height: 60px;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+.list ul li a{
+    color: #767676;
+}
+.list ul li i{
+    color: #6278df;
+    font-size: 30px;
+    display: inline-block;
+    padding-right: 25px;
+   
+}
+.bt button{
+    margin-top: 20px;
+    padding: 10px 70px;
+    font-size: 23px;
+    color: #6278df;
+    background-color: #fff;
+    font-weight: 600;
+    border: transparent;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition-duration: .5s;
+}
+.bt .rr:hover{
+    color: #fff;
+    background-color: #000;
+}
+/* ===============> teeam member ==========> */
+/* ===============> teeam member ==========> */
+.team-member h1{
+    margin: 100px 0;
+    font-size: 50px;
+    font-weight: 500;
+}
+.member1{
+    background-color: #fff;
+    width: 23%;
+    margin: 0 15px;
+}
+.member1:hover{
+    box-shadow: 0 0 20px 0 rgb(218, 218, 218);
+}
+.face1 img{
+    width: 100%;
+}
+.catagory{
+    margin: 15px 10px ;
+}
+.catagory p{
+    color: #767676;
+    font-weight: 400;
+    margin: 5px 0;
+    font-size: 20px;
+}
+.catagory h2{
+    font-size: 30px;
+    font-weight: 500;
+}
